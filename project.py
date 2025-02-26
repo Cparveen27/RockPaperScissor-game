@@ -1,0 +1,13 @@
+import random rock = ''' _______ ---' ) () () () ---.(__)
+
+'''
+
+paper = ''' ______ ---' )__ ______) _____) ) ---.)
+
+'''
+
+scissors = ''' ______ ---' )__ _) ______) () ---.()
+
+''' game_image = [rock,paper,scissors] user_choice = int(input("enter your choice: type 0 for rock, 1 for paper,2 for scissors:")) if user_choice >= 3 or user_choice <= 0: print("you entered invalid number, you loss the game.") else:
+print(game_image[user_choice]) computer_choice=random.randint(0,2) print("computer_choice:") print(game_image[computer_choice]) if computer_choice == user_choice: print("it's a draw.") elif computer_choice == 0 and user_choice == 2: print("you lose") elif computer_choice == 2 and user_choice == 0: print("you win the game")
+elif computer_choice > user_choice : print("you lose the game.") elif computer_choice < user_choice: print("you win the game")
